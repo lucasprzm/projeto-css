@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+ul {
+  list-style: none;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url(./pexels.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+header ul {
+  display: flex;
+}
+header ul li {
+  padding: 10px;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  text-align: center;
+}
+
+.container .name h1 {
+  font-size: 60px;
+}
+
+.container .name h5 {
+  font-size: 30px;
+}
+
+#arrow {
+  font-size: 30px;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#animation {
+  transition: 300ms;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.active {
+  display: block !important;
+}
+
+#about p {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.form {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.form input {
+  width: 70%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.form button {
+  width: 30%;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: black;
+  border-radius: 5px 5px 5px 5px;
+}
+.form button:hover {
+  background-color: rgba(87, 45, 141, 0.205);
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  #about p,
+  .form,
+  .form input,
+  .form button,
+  header ul li {
+    font-size: 20px;
+  }
+  header div img {
+    width: 125px;
+  }
+  .container .name h1 {
+    font-size: 50px;
+  }
+  .container .name h5 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .container .name h1 {
+    font-size: 35px;
+  }
+  .container .name h5 {
+    font-size: 20px;
+  }
+  #about p {
+    max-width: 80%;
+  }
+  .form {
+    width: 80%;
+  }
+  #about p,
+  .form,
+  .form input,
+  .form button {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container .name h1 {
+    font-size: 25px;
+  }
+  .container .name h5 {
+    font-size: 15px;
+  }
+  #about p {
+    max-width: 80%;
+  }
+  .form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  header ul li {
+    font-size: 15px;
+  }
+  header div img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  header div img {
+    width: 90px;
+  }
+  .container .name h1 {
+    font-size: 20px;
+  }
+  .container .name h5 {
+    font-size: 12px;
+  }
+  header ul li,
+  #about p,
+  .form,
+  .form input,
+  .form button {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  header div img {
+    width: 70px;
+  }
+}
